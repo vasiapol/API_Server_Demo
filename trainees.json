@@ -1,0 +1,17 @@
+{
+   "trainee1":{
+      "Firstname":"Vitalii",
+      "Lastname":"Shvadchak",
+      "Age":"22"
+   },
+   "trainee2":{
+      "Firstname":"Vasyl",
+      "Lastname":"Polianskii",
+      "Age":"24"
+   },
+   "trainee3":{
+      "Firstname":"Bogdan",
+      "Lastname":"Glibovitskiy",
+      "Age":"32"
+   }
+}
