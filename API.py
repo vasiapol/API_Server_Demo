@@ -4,6 +4,7 @@ from flask_restful import Api
 from functionality import welcome, trainee, trainee_list
 
 
+
 app = Flask(__name__)
 api = Api(app)
 
