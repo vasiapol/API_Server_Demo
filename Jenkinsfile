@@ -19,5 +19,4 @@ node {
       echo "uploading package..."    }
     }
   } 
-  }
 }
