@@ -7,7 +7,7 @@ node {
       sh "git clean -fdx"
     }
     stage('compile') {
-      sh "python API.py"
+      sh "nohup python API.py &"
     }
     stage('test') {
       echo "nothing to do"
