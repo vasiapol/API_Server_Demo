@@ -1,5 +1,4 @@
 node {
-  try {
     stage('checkout') {
       checkout scm
     }
@@ -18,4 +17,3 @@ node {
     stage('publish') {
       echo "uploading package..."    }
     }
-  }
