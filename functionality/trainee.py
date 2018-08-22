@@ -2,6 +2,7 @@ import re
 from flask_restful import Resource, abort, reqparse
 from db import mydb, mycursor, id_exist
 from args_parser import *
+import Prometheus_client
 
 # Trainee
 # shows a single trainee item and lets you delete a trainee item
@@ -20,8 +21,11 @@ class Trainee(Resource):
             result = [dict(zip([key[0] for key in mycursor.description], row))
                       for row in result]
         else:
+            Prometheus_client.Metrics.b.inc()           
             abort(404, message="Trainee with the specified ID {} doesn't exist".format(
                 trainee_id))
+            Prometheus_client.Metrics.b.inc()
+        Prometheus_client.Metrics.c.labels('get', '/trainees/'+str(trainee_id)).inc()
         return result, 200
 
     def delete(self, trainee_id):
