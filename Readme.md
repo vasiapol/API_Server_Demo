@@ -13,7 +13,7 @@ We're assumming that you're using CentOS and Python 2, so to run this project yo
 * [MariaDb Installation guide ](https://mariadb.com/kb/en/library/getting-installing-and-upgrading-mariadb/)
 * [MySQL Installation guide](https://dev.mysql.com/doc/refman/8.0/en/installing.html)
 
-#### 5. Create database, table or even fill table with some data using the appropriate scripts in sql folder.
+#### 5. Create database, table or even fill table with some data using appropriate scripts in project\`s sql folder.
 
 #### 6. Update database configuration file db_conf.json with your settings 
 example:
