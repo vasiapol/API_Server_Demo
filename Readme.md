@@ -1,13 +1,23 @@
 # Simple RESTful API server
 ## About this project
  This repository contains source code of the simple API server which allows retrieving, adding, modifying and deleting entries from MySQL database table.
+## Install
+We're assumming that you're using CentOS and Python 2, so to run this project you have to complete following steps:
+#### 1. Install python-devel and gcc
+ `sudo yum install gcc python-devel`
+#### 2. Clone project\`s repository to your local machine
+  `git clone http://192.168.103.236:3000/Lv-335.DevOps/API_Server_Demo.git`
+#### 3. Go to the local copy of repository. Open terminal and run the following command
+  `sudo pip install -r requirements.txt`
+#### 4.
+   ``
 ## Functionality
 ### 1. Show all
 Returns json data about all trainees
 * URL
     `/api/v1/trainees`
 
-* Method:
+* Method:track
     `GET`
 *  Success Response:
   * Code: 200
