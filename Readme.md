@@ -15,7 +15,7 @@ We're assumming that you're using CentOS and Python 2, so to run this project yo
 
 #### 5. Create database, table or even fill table with some data using appropriate scripts in project\`s sql folder.
 
-#### 6. Update database configuration file db_conf.json with your settings 
+#### 6. Update database configuration file db_conf.json with your settings
 example:
 ```json
 {   "db":{
@@ -36,9 +36,9 @@ Returns json data about all trainees
 * URL
     `/api/v1/trainees`
 
-* Method:track
+* Method:
     `GET`
-*  Success Response:
+*  Successful Response:
   * Code: 200
 
     Content: `{ id:1, Firstname : "Name", Lastname : "Name", Age : "20" }`
@@ -59,7 +59,7 @@ Returns json data about trainee with the specified id
     Required:
     `id=[integer]`
 
-*  Success Response:
+*  Successful Response:
 
       * Code: 200
 
@@ -98,13 +98,13 @@ Creates new  trainee
     `POST`
 * Data Params:
 
-  Required:
+    Required:
 
-  `Firstname=[string]`
+    `Firstname=[string]`
 
-  `Lastname=[string]`
+    `Lastname=[string]`
 
-  `Age=[integer]`
+    `Age=[integer]`
 
 *  Success Response:
     * Code: 201
