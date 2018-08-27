@@ -15,7 +15,7 @@ We're assumming that you're using CentOS and Python 2, so to run this project yo
 
 #### 5. Create database, table or even fill table with some data using the appropriate scripts in sql folder.
 
-#### 6. Update database configuration file with your settings db_conf.json
+#### 6. Update database configuration file db_conf.json with your settings 
 example:
 ```json
 {   "db":{
