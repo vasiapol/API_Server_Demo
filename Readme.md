@@ -1,6 +1,35 @@
 # Simple RESTful API server
 ## About this project
  This repository contains source code of the simple API server which allows retrieving, adding, modifying and deleting entries from MySQL database table.
+## Install
+We're assumming that you're using CentOS and Python 2, so to run this project you have to complete following steps:
+#### 1. Installation python-devel and gcc
+ `sudo yum install gcc python-devel`
+#### 2. Clone project\`s repository to your local machine
+  `git clone http://192.168.103.236:3000/Lv-335.DevOps/API_Server_Demo.git`
+#### 3. Go to the local copy of repository. Open terminal and run the following command
+  `sudo pip install -r requirements.txt`
+#### 4. Install and configure MariaDb or MySQL. Please check official guide:
+* [MariaDb Installation guide ](https://mariadb.com/kb/en/library/getting-installing-and-upgrading-mariadb/)
+* [MySQL Installation guide](https://dev.mysql.com/doc/refman/8.0/en/installing.html)
+
+#### 5. Create database, table or even fill table with some data using appropriate scripts in project\`s sql folder.
+
+#### 6. Update database configuration file db_conf.json with your settings
+example:
+```json
+{   "db":{
+      "host":"ip address",
+      "user":"username",
+      "passwd":"password",
+      "database":"name"
+   }
+}
+```
+#### 7. Run project from local directory:
+```bash
+python API.py
+```
 ## Functionality
 ### 1. Show all
 Returns json data about all trainees
@@ -9,7 +38,7 @@ Returns json data about all trainees
 
 * Method:
     `GET`
-*  Success Response:
+*  Successful Response:
   * Code: 200
 
     Content: `{ id:1, Firstname : "Name", Lastname : "Name", Age : "20" }`
@@ -30,7 +59,7 @@ Returns json data about trainee with the specified id
     Required:
     `id=[integer]`
 
-*  Success Response:
+*  Successful Response:
 
       * Code: 200
 
@@ -69,13 +98,13 @@ Creates new  trainee
     `POST`
 * Data Params:
 
-  Required:
+    Required:
 
-  `Firstname=[string]`
+    `Firstname=[string]`
 
-  `Lastname=[string]`
+    `Lastname=[string]`
 
-  `Age=[integer]`
+    `Age=[integer]`
 
 *  Success Response:
     * Code: 201
