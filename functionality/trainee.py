@@ -21,11 +21,10 @@ class Trainee(Resource):
             result = [dict(zip([key[0] for key in mycursor.description], row))
                       for row in result]
         else:
-            Prometheus_client.Metrics.b.inc()           
+            Prometheus_client.Metrics.bad_request.labels('get', '/trainees/<id>').inc()
             abort(404, message="Trainee with the specified ID {} doesn't exist".format(
                 trainee_id))
-            Prometheus_client.Metrics.b.inc()
-        Prometheus_client.Metrics.c.labels('get', '/trainees/'+str(trainee_id)).inc()
+        Prometheus_client.Metrics.request_by_id.labels('get', '/trainees/'+str(trainee_id)).inc()
         return result, 200
 
     def delete(self, trainee_id):
