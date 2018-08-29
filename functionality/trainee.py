@@ -1,4 +1,3 @@
-import re
 from flask_restful import Resource, abort, reqparse
 from db import mydb, mycursor, id_exist
 from args_parser import *
