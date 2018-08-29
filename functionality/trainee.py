@@ -38,7 +38,7 @@ class Trainee(Resource):
                 trainee_id))
         return '{0} {1}'.format("1 record deleted"), 200
 
-    def put(self, trainee_id):
+    def patch(self, trainee_id):
         args = parser.parse_args()
         # update only if arg value is not null
 
