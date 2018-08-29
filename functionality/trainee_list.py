@@ -1,11 +1,14 @@
 from flask_restful import Resource, abort
 from db import mycursor, mydb
 from args_parser import *
+import Prometheus_client
 # TraineeList
 # shows a list of all trainees, and lets you POST to add new items
 
 
 class TraineeList(Resource):
+    REQUEST_TIME=Prometheus_client.Metrics.select_all_id
+    @REQUEST_TIME.time()
     def get(self):
         mycursor.execute("SELECT * FROM TraineeList")
         result = mycursor.fetchall()
