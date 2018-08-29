@@ -18,4 +18,4 @@ Hello world
 </body>
 </html>"""
         # return 'Hello world, this is our simple REST API Server!'
-          return html_str
+         return html_str
