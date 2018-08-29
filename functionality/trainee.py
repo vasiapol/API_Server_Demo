@@ -36,7 +36,7 @@ class Trainee(Resource):
         else:
             abort(404, message="Trainee with the specified ID {} doesn't exist".format(
                 trainee_id))
-        return '{0} {1}'.format("1 record deleted"), 200
+        return '{0}'.format("1 record deleted"), 200
 
     def patch(self, trainee_id):
         args = parser.parse_args()
