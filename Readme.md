@@ -148,3 +148,31 @@ Updates one or more parameters of trainee with specified id
     * Code: 404 NOT FOUND
 
        Content: `{ Error : "Trainee with the specified id <id> does not exist" }`
+
+### 6. Show disk statistics
+Returns json with basic information about all drives
+* URL   `/api/v1/disk`
+
+* Method: `GET`
+*  Successful Response:
+    * Code: 200
+
+    Content:
+```json
+    [
+      {
+        "used": "1G",
+        "total": "16G",
+        "percent": 9.2,
+        "Drive": "/",
+        "free": "15G"
+      },
+      {
+        "used": "171M",
+        "total": "1014M",
+        "percent": 16.9,
+        "Drive": "/boot",
+        "free": "842M"
+      }
+    ]
+```
