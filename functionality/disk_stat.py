@@ -1,6 +1,5 @@
 import psutil
 import os
-from hurry.filesize import size
 from flask_restful import Resource
 
 
@@ -18,7 +17,7 @@ def disk_statistics():
                 continue
         usage = psutil.disk_usage(partition.mountpoint)
         partition_info = {"Drive": partition.mountpoint,
-                              "total": size(usage.total), "used": size(usage.used), "free": size(usage.free),
+                              "total": usage.total, "used": usage.used, "free": usage.free,
                               "percent": usage.percent}
         usage_list.append(dict(partition_info))
     return usage_list
