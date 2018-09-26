@@ -1,1 +1,4 @@
- /usr/sbin/setsebool httpd_can_network_connect true 
+https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-uwsgi-and-nginx-on-centos-7
+
+#SElinux problem
+/usr/sbin/setsebool httpd_can_network_connect true 
