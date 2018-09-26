@@ -148,3 +148,5 @@ Updates one or more parameters of trainee with specified id
     * Code: 404 NOT FOUND
 
        Content: `{ Error : "Trainee with the specified id <id> does not exist" }`
+       
+       uwsgi --http 127.0.0.1:5000 --module wsgi:app
