@@ -6,4 +6,4 @@ from flask_restful import Resource
 
 class Welcome(Resource):
     def get(self):
-        return 'Hello world, this is our simple REST API Server)'
+        return 'Hello world, this is our simple REST API Server :)'
