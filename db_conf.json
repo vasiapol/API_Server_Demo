@@ -1,7 +1,7 @@
 {   "db":{
-      "host":"192.168.103.176",
-      "user":"user7",
-      "passwd":"123456123",
+      "host":"galera-ss",
+      "user":"root",
+      "passwd":"myrootpassword",
       "database":"Trainees"
    }
 }
