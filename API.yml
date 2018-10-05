@@ -1,14 +1,14 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: api
+  name: __NAME__
   labels:
-    app: api
+    app: __NAME__
 spec:
   replicas: 5
   selector:
-    matchLabels:
-      app: api
+    matchLabels: 
+      app: __NAME__
   strategy:
     type: RollingUpdate
     rollingUpdate:
@@ -18,11 +18,11 @@ spec:
   template:
     metadata:
       labels:
-        app: api
+        app: __NAME__
     spec:
       containers:
-      - name: api
-        image: vshvadchak/api:latest
+      - name: __NAME__
+        image: __IMAGE__
         ports:
           - name: http
             containerPort: 5000
@@ -60,10 +60,10 @@ spec:
 ---
 kind: Service
 apiVersion: v1metadata:
-  name: api
+  name: __NAME__
 spec:
-  selector:
-    app: api
+  selector: __NAME__
+    app:
   ports:
     - port: 5000
     # Default port for image
