@@ -4,9 +4,9 @@ node {
     }
     stage('prepare') {
       def customImage = docker.build("api:${env.BUILD_ID}")
-
-    customImage.inside {
+      customImage.inside {
         sh 'make test'
+      }
     }
     stage('compile') {
       sh "python API.py &"
