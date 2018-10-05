@@ -7,7 +7,6 @@ node {
 
     customImage.inside {
         sh 'make test'
-#sh "git clean -fdx"
     }
     stage('compile') {
       sh "python API.py &"
