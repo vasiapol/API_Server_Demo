@@ -3,7 +3,11 @@ node {
       checkout scm
     }
     stage('prepare') {
-      sh "git clean -fdx"
+      def customImage = docker.build("api:${env.BUILD_ID}")
+
+    customImage.inside {
+        sh 'make test'
+#sh "git clean -fdx"
     }
     stage('compile') {
       sh "python API.py &"
