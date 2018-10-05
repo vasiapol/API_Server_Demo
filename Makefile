@@ -1,6 +1,6 @@
 .PHONY: Kubernetes deployment
 
-include ./kube_maker/makefiles/*.mk
+include ./*.mk
 
 # Config
 name = api
