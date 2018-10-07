@@ -5,5 +5,4 @@ parser = reqparse.RequestParser()
 mycursor.execute("SELECT * FROM TraineeList")
 mycursor.fetchall()
 for key in mycursor.description:
-    print(key[0])
     parser.add_argument(key[0])
