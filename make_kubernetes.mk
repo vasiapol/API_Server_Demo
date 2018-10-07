@@ -11,8 +11,8 @@ docker_image_build:
 
 .PHONY: build_manifest
 build_manifest:
-        sed -i "s|__IMAGE__|polianskiyvasyl/$(name):$(tag)|g" API.yml
-        sed -i "s|__NAME__|$(name)|g"  API.yml
+        sed -i "s|__IMAGE__|polianskiyvasyl/$(name):$(tag)|g" k8s_API.yml
+        sed -i "s|__NAME__|$(name)|g"  k8s_API.yml
 
 .PHONY: registry_push
 registry_push:
@@ -20,11 +20,11 @@ registry_push:
 
 .PHONY: kube_deploy
 kube_deploy:
-        kubectl apply -f API.yml
+        kubectl apply -f k8s_API.yml
 
-~                                                                                                                                                                
-~                                                                                                                                                                
-~                                                                                                                                                                
-~                                                                                                                                                                
-~                                                                                                                                                                
-~                                                      
+~
+~
+~
+~
+~
+~

@@ -8,6 +8,7 @@ try:
         json_data = json.load(f)
     mydb = mysql.connector.connect(
         host=json_data["db"]["host"],
+        port=json_data["db"]["port"],
         user=json_data["db"]["user"],
         passwd=json_data["db"]["passwd"],
         database=json_data["db"]["database"]
