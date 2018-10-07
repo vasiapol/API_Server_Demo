@@ -6,7 +6,7 @@ k8s_deploy: docker_image_build registry_push build_manifest kube_deploy
 
 .PHONY: docker_image_build
 docker_image_build:
-				docker build --tag $(name) .
+		docker build --tag $(name) .
         docker tag $(name):latest polianskiyvasyl/$(name):$(tag)
 
 .PHONY: build_manifest
