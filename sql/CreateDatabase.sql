@@ -1,1 +1,1 @@
-CREATE DATABASE Trainees;
+SCREATE DATABASE Trainees;

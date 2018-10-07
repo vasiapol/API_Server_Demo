@@ -20,13 +20,15 @@ except (KeyError):
     message = "Wrong configuration file"
     sys.exit(message)
 except mysql.connector.errors.InterfaceError:
-    message = 'Can\'t connect to MySQL server on {0}{1}'.format(
-    (json_data["db"]["host"]), ":3306")
+    message = 'Can\'t connect to MySQL server {0}:{1}'.format(
+    (json_data["db"]["host"]),json_data["db"]["port"])
     sys.exit(message)
 else:
     mycursor = mydb.cursor()
-    print("Successfully connected to the MySQL server...")
-
+    message='Successfully connected to MySQL server {0}:{1}'.format(
+    (json_data["db"]["host"]),json_data["db"]["port"])
+    print(message)
+    
 def id_exist(id):
     sql = 'SELECT * FROM TraineeList WHERE ID= {0}'.format(id)
     mycursor.execute(sql)

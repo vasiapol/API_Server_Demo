@@ -18,9 +18,14 @@ class TraineeList(Resource):
 
     def post(self):
         args = parser.parse_args()
-        sql = "INSERT INTO TraineeList (Firstname, Lastname ,Age) VALUES (%s, %s,%s)"
-        val = (args['Firstname'], args['Lastname'], args['Age'])
-        if all(arg is not None for arg in val):
+        arg_count="%s,"*len(args)
+        arg_count=arg_count[:-1]
+        sql = "INSERT INTO TraineeList () VALUES ({})".format(arg_count)
+        val = [0,]
+        for value in args.itervalues():
+            if value is not None:
+                val.append(value)
+        if len(val)==len(args):
             mycursor.execute(sql, val)
             mydb.commit()
         else:
