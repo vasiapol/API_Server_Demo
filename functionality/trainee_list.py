@@ -17,7 +17,7 @@ class TraineeList(Resource):
         return result, 200
 
     def post(self):
-        args = parser.parse_args()
+        args = dict(parser.parse_args())
         arg_count="%s,"*len(args)
         arg_count=arg_count[:-1]
         sql = "INSERT INTO TraineeList () VALUES ({})".format(arg_count)
