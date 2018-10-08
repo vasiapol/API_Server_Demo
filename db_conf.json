@@ -1,6 +1,6 @@
 {   "db":{
-      "host":"192.168.103.150",
-      "port":"32000",
+      "host":"haproxy",
+      "port":"3306",
       "user":"root",
       "passwd":"myrootpassword",
       "database":"Trainees"
