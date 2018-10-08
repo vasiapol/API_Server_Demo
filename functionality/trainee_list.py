@@ -22,7 +22,7 @@ class TraineeList(Resource):
         arg_count=arg_count[:-1]
         sql = "INSERT INTO TraineeList () VALUES ({})".format(arg_count)
         val = [0,]
-        for value in args.itervalues():
+        for key,value in args.items():
             if value is not None:
                 val.append(value)
         if len(val)==len(args):
@@ -31,3 +31,4 @@ class TraineeList(Resource):
         else:
             abort(400, Error="Some values of parameters are empty")
         return "Created", 201
+
