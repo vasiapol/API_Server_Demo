@@ -27,9 +27,3 @@ rebuild_example_manifest:
 	sed -i "s|polianskiyvasyl/$(project)-$(name):$(tag)|__IMAGE__|g" API_example.yml
 	sed -i "s| $(name)| __NAME__|g"  API_example.yml
 
-~
-~
-~
-~
-~
-~

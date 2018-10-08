@@ -59,11 +59,12 @@ spec:
           periodSeconds: 5
 ---
 kind: Service
-apiVersion: v1metadata:
+apiVersion: v1
+metadata:
   name: __NAME__
 spec:
-  selector: __NAME__
-    app:
+  selector: 
+    app: __NAME__
   ports:
     - port: 5000
     # Default port for image
