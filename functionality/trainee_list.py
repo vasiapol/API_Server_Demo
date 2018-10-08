@@ -10,6 +10,7 @@ class TraineeList(Resource):
         mycursor.execute("SELECT * FROM TraineeList")
         result = mycursor.fetchall()
         mycursor.commit()
+        mycursor.close()
         if len(result) == 0:
             abort(404, Error="Table is empty")
         # JSONify output
