@@ -1,4 +1,5 @@
-# API on Kubernetes #
+# Kubernetes ready version of this project #
+This project contains autoscalable version of the project which is using NGINX Ingress controller and Metrics Server
 # Prerequisites
 
 1. Kubernetes Metrics Server
