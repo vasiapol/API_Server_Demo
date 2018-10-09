@@ -23,10 +23,6 @@ spec:
           value: 10.233.74.190
         - name: MARIA_SS_2_ADDR
           value: 10.233.75.36
-        - name: UI_USER
-          value: dexnov17
-        - name: UI_PASS
-          value: devops254
         ports:
         - name: mysqlport
           containerPort: 3306
