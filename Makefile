@@ -1,6 +1,6 @@
 .PHONY: Kubernetes deployment
 
-include ./*.mk
+include ./k8s/*.mk
 
 # Config
 name = api

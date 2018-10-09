@@ -4,4 +4,4 @@ RUN apk add python3-dev gcc musl-dev linux-headers
 COPY . .
 RUN pip3.7 install --no-cache-dir -r requirements.txt
 EXPOSE 5000/tcp
-CMD ["uwsgi", "--ini", "API.ini"]
+CMD ["uwsgi", "--ini", "./config/API.ini"]
