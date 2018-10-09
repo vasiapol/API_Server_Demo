@@ -23,7 +23,7 @@ $ kubectl create -f mariadb-pv.yml
 $ kubectl create -f mariadb-pvc.yml
 ```
 
-Then, deploy the Galera Cluster pods:
+### 3.Then, deploy the Galera Cluster pods:
 
 ```bash
 $ kubectl create -f mariadb-ss.yml
