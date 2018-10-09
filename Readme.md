@@ -21,8 +21,9 @@
  project = devops335
  ```
 
+3.Simply run make command
 
-
+### Deploy on CentOS
 
 We're assumming that you're using CentOS and Python 2, so to run this project you have to complete following steps:
 #### 1. Installation python-devel and gcc
