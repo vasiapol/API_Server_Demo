@@ -10,7 +10,7 @@ Manifests to run this project in Kubenetes. Tested with Kubernetes v1.11.
 
 ## Deployment Steps ##
 
-### 1. Manual Deployment ###
+### 1. Deploy API ###
 
 ```bash
 $ kubectl apply -f API.yaml
