@@ -14,7 +14,7 @@
 
  `git clone http://192.168.103.206:3000/Lv-335.DevOps/API_Server_Demo.git`
 
-2.Change variable in Makefile
+2.Change variables in Makefile
 
  ```
  name = api
