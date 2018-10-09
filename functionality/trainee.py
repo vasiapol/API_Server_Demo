@@ -16,7 +16,6 @@ class Trainee(Resource):
             mycursor.execute(sql)
             result = mycursor.fetchall()
             mydb.commit()
-            mycursor.close()
             # JSONify output
             result = [dict(zip([key[0] for key in mycursor.description], row))
                       for row in result]
