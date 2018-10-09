@@ -1,11 +1,15 @@
 # Kubernetes ready version of this project #
-This project contains autoscalable version of the project which is using NGINX Ingress controller and Metrics Server
+This project contains autoscalable version of the project which is using NGINX Ingress controller and k8s Metrics Server.
 # Prerequisites
 
 1. Kubernetes Metrics Server
 
+https://github.com/kubernetes-incubator/metrics-server
+
+
 2. NGINX Ingress Controller
 
+https://github.com/kubernetes/ingress-nginx
 
 Manifests to run this project in Kubenetes. Tested with Kubernetes v1.11.
 
