@@ -3,7 +3,7 @@
  This repository contains source code of the simple API server which allows retrieving, adding, modifying and deleting entries from MySQL database table.
 ## Install
 ### Deploy in Kubernetes cluster using makefile
-####Prerequisites
+#### Prerequisites
 
 
 
