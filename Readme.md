@@ -21,14 +21,15 @@
  project = devops335
  ```
 
+3.Simply run make command
 
+### Deploy on CentOS
 
-
-We're assumming that you're using CentOS and Python 2, so to run this project you have to complete following steps:
+We're assumming that you're using CentOS and Python 3, so to run this project you have to complete following steps:
 #### 1. Installation python-devel and gcc
  `sudo yum install gcc python-devel`
 #### 2. Clone project\`s repository to your local machine
-  `git clone http://192.168.103.236:3000/Lv-335.DevOps/API_Server_Demo.git`
+  `git clone http://192.168.103.206:3000/Lv-335.DevOps/API_Server_Demo.git`
 #### 3. Go to the local copy of repository. Open terminal and run the following command
   `sudo pip install -r requirements.txt`
 #### 4. Install and configure MariaDb or MySQL. Please check official guide:
@@ -170,6 +171,3 @@ Updates one or more parameters of trainee with specified id
     * Code: 404 NOT FOUND
 
        Content: `{ Error : "Trainee with the specified id <id> does not exist" }`
-       
-       uwsgi --http 0.0.0.0:5000 --module wsgi:app
-       uwsgi --ini API.ini
