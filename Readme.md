@@ -2,6 +2,11 @@
 ## About this project
  This repository contains source code of the simple API server which allows retrieving, adding, modifying and deleting entries from MySQL database table.
 ## Install
+### Deploy in Kubernetes cluster using makefile
+####Prerequisites
+
+
+
 We're assumming that you're using CentOS and Python 2, so to run this project you have to complete following steps:
 #### 1. Installation python-devel and gcc
  `sudo yum install gcc python-devel`
