@@ -14,7 +14,7 @@ https://github.com/kubernetes/ingress-nginx
 Manifests to run this project in Kubenetes. Tested with Kubernetes v1.11.
 
 ### Deployment Steps
-#### 1. Manual installation 
+#### I. Manual installation 
 ##### 1. Deploy API ###
 
 ```bash
@@ -31,5 +31,5 @@ $ kubectl apply -f ./ingress/api_hpa.yaml
 ```bash
 $ kubectl apply -f ./ingress/ingress.yaml
 ```
-#### 2.Installation using makefile if you already have prerequisites satisfied
+#### II.Installation using makefile if you already have prerequisites satisfied
 Please refer to this [guide] (http://192.168.103.206:3000/Lv-335.DevOps/API_Server_Demo/src/Refactoring#deploy-in-kubernetes-cluster-using-makefile)
