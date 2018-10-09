@@ -1,0 +1,9 @@
+Makefile
+.gitignore
+k8s
+sql
+Jenkinsfike
+.git
+Readme.md
+curl_rest.sh
+Dockerfile
