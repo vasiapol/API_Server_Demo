@@ -2,6 +2,28 @@
 ## About this project
  This repository contains source code of the simple API server which allows retrieving, adding, modifying and deleting entries from MySQL database table.
 ## Install
+### Deploy in Kubernetes cluster using makefile
+#### Prerequisites
+- Running kubernetes cluster
+- Kubectl configured to perform deployment tasks
+- You should be loggined in DockerHub
+
+### Deployment guide
+
+1.Clone this repo: 
+
+ `git clone http://192.168.103.206:3000/Lv-335.DevOps/API_Server_Demo.git`
+
+2.Change variables in Makefile
+
+ ```
+ name = api
+ project = devops335
+ ```
+
+
+
+
 We're assumming that you're using CentOS and Python 2, so to run this project you have to complete following steps:
 #### 1. Installation python-devel and gcc
  `sudo yum install gcc python-devel`
@@ -98,7 +120,7 @@ Creates new  trainee
     `POST`
 * Data Params:
 
-    Required:
+    RequiredD:
 
     `Firstname=[string]`
 
