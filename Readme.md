@@ -7,6 +7,7 @@
 - Running kubernetes cluster
 - Kubectl configured to perform deployment tasks
 - You should be loggined in DockerHub
+
 ###Deployment guide
 1.Clone this repo: 
 
@@ -111,7 +112,7 @@ Creates new  trainee
     `POST`
 * Data Params:
 
-    Required:
+    RequiredD:
 
     `Firstname=[string]`
 
