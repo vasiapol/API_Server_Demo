@@ -13,12 +13,16 @@ Manifests to run this project in Kubenetes. Tested with Kubernetes v1.11.
 ### 1. Manual Deployment ###
 
 ```bash
-$ kubectl create -f API.yaml
+$ kubectl apply -f API.yaml
 ```
 
 ### 2. Deploy Horizontal Pod Autoscaler ###
 
 ```bash
-$ kubectl create -f ./ingress/api_hpa.yaml
+$ kubectl apply -f ./ingress/api_hpa.yaml
 ```
+### 3. Deploy Ingress ###
 
+```bash
+$ kubectl apply -f ./ingress/ingress.yaml
+```
