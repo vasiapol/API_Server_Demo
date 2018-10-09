@@ -8,7 +8,8 @@
 - Kubectl configured to perform deployment tasks
 - You should be loggined in DockerHub
 
-###Deployment guide
+### Deployment guide
+
 1.Clone this repo: 
 
  `git clone http://192.168.103.206:3000/Lv-335.DevOps/API_Server_Demo.git`
