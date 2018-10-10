@@ -63,4 +63,4 @@ This repository contains the NGINX controller built around the Kubernetes Ingres
 
 
 #### II.Installation using makefile if you already have prerequisites satisfied
-Please refer to this [guide] ``(http://192.168.103.206:3000/Lv-335.DevOps/API_Server_Demo/src/Refactoring#deploy-in-kubernetes-cluster-using-makefile)``
+Please refer to this [guide] (http://192.168.103.206:3000/Lv-335.DevOps/API_Server_Demo/src/Refactoring#deploy-in-kubernetes-cluster-using-makefile)
