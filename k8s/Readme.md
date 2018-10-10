@@ -46,8 +46,11 @@ This repository contains the NGINX controller built around the Kubernetes Ingres
  `kubectl apply -f api_hpa.yaml`     
 
  #### -  Quick deployment Ingress Controller script:
+ 
   `./deploy.sh`
+  
  #### - Uninstall the Ingress Controller
+ 
   `./delete.sh`
 
 
