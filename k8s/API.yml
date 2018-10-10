@@ -12,7 +12,7 @@ spec:
   strategy:
     type: RollingUpdate
     rollingUpdate:
-      maxSurge: 25%
+      maxSurge: 50%
       maxUnavailable: 50%
   minReadySeconds: 10
   template:
@@ -57,7 +57,7 @@ spec:
             port: http
           initialDelaySeconds: 10
           periodSeconds: 5
-
+---
 kind: Service
 apiVersion: v1
 metadata:

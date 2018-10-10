@@ -31,7 +31,7 @@ We're assumming that you're using CentOS and Python 3, so to run this project yo
 #### 2. Clone project\`s repository to your local machine
   `git clone http://192.168.103.206:3000/Lv-335.DevOps/API_Server_Demo.git`
 #### 3. Go to the local copy of repository. Open terminal and run the following command
-  `sudo pip install -r requirements.txt`
+  `sudo pip3 install -r requirements.txt`
 #### 4. Install and configure MariaDb or MySQL. Please check official guide:
 * [MariaDb Installation guide ](https://mariadb.com/kb/en/library/getting-installing-and-upgrading-mariadb/)
 * [MySQL Installation guide](https://dev.mysql.com/doc/refman/8.0/en/installing.html)
@@ -51,7 +51,9 @@ example:
 ```
 #### 7. Run project from local directory:
 ```bash
-python API.py
+
+uwsgi --ini ./config/API.ini
+
 ```
 ## Functionality
 ### 1. Show all
@@ -142,7 +144,7 @@ Creates new  trainee
 Updates one or more parameters of trainee with specified id
 * URL  `/api/v1/trainees/<id>`
 
-* Method: `PUT`
+* Method: `PATCH`
 * URL Params
 
   Required:
