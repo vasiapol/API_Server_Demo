@@ -57,7 +57,7 @@ spec:
             port: http
           initialDelaySeconds: 10
           periodSeconds: 5
-
+---
 kind: Service
 apiVersion: v1
 metadata:
