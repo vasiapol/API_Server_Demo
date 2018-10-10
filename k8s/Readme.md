@@ -15,33 +15,33 @@ This project contains autoscalable version of the project which is using NGINX I
 
 #### 2. NGINX Ingress Controller Setup
 This repository contains the NGINX controller built around the Kubernetes Ingress resource that uses ConfigMap to store the NGINX configuration. Tested with Kubernetes v1.11.
-1. Clone this repo:
+ 1. Clone this repo:
 
  `git clone http://192.168.103.206:3000/Lv-335.DevOps/API_Server_Demo.git`
 
-2. Create namespace ingress-nginx:
+ 2. Create namespace ingress-nginx:
 
   `kubectl apply -f nms.yaml`
-3. Create config-map:
+ 3. Create config-map:
 
  `kubectl apply -f config-map.yaml`
-4. Create Clusterrolebinding and serviceaccount:
+ 4. Create Clusterrolebinding and serviceaccount:
 
  `kubectl apply -f serviceaccount.yaml`  
 
-5. Deploy NGINX ingress controller:
+ 5. Deploy NGINX ingress controller:
 
  `kubectl apply -f nginx-ingress-controller.yaml`
 
-6. Create service nodeport:
+ 6. Create service nodeport:
 
   `kubectl apply -f service-nodeport.yaml`
 
-7. Create ingress rules for appliccation:
+ 7. Create ingress rules for appliccation:
 
   `kubectl apply -f ingress.yaml`
 
-8. Edit and apply Horizontal pod Autoscaler:
+ 8. Edit and apply Horizontal pod Autoscaler:
 
  `kubectl apply -f api_hpa.yaml`     
 
