@@ -66,5 +66,15 @@ spec:
   selector:
     app: __NAME__
   ports:
-    - port: 5000
+  - name: __NAME__
+    port: 5000
+    nodePort: 30005
+    protocol: TCP
+  selector:
+     app: __NAME__
+  type: NodePort
+status:
+  loadBalancer: {}
+---
+  
     # Default port for image
