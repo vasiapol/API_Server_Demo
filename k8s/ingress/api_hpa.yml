@@ -7,10 +7,10 @@ spec:
     apiVersion: extensions/v1beta1
     kind: Deployment
     name: api
-  minReplicas: 3
+  minReplicas: 5
   maxReplicas: 50
   metrics:
   - type: Resource
     resource:
       name: cpu
-      targetAverageUtilization: 30
+      targetAverageUtilization: 20
