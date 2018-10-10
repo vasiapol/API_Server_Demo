@@ -142,7 +142,7 @@ Creates new  trainee
 Updates one or more parameters of trainee with specified id
 * URL  `/api/v1/trainees/<id>`
 
-* Method: `PUT`
+* Method: `PATCH`
 * URL Params
 
   Required:
